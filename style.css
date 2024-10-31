@@ -1,0 +1,81 @@
+body {  
+  font-family: Arial, sans-serif;
+  font-size: 1.3em;
+}
+
+#calculator {
+    left: 50%;
+    min-height: 240px;
+    min-width:240px;
+    position: fixed;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width:30%;
+}
+
+#calculatorBody {
+    display: grid;
+    grid-column-gap: 0.1em;
+    grid-row-gap: 0.1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#calculatorHistory {
+    border: 1px solid black;
+    height: 100px;
+    overflow: scroll;
+}
+
+#calculatorHistory::-webkit-scrollbar {
+    width: 0;
+}
+
+#calculatorInput {
+    box-sizing: border-box;
+    margin: 0.1em 0;
+    text-align: end;
+    width: 100%;
+}
+
+#calculatorHistory div {
+    text-align: end;
+}
+
+.expressionAtHistory, .resultAtHistory {
+    color: dimgray;
+    font-size: 0.9em;
+}
+
+.resultAtHistory {
+    font-weight: 600;
+}
+
+button {
+    background-color: white;
+    border-width: 0.5px;
+}
+
+button:hover {
+    background-color: rgb(237, 235, 235);
+}
+
+.mainOperation {
+    background-color:sandybrown;
+}
+
+.mainOperation:hover {
+    background-color:rgba(244, 165, 96, 0.762);
+}
+
+#getResult {
+    background-color: chocolate;
+}
+
+#getResult:hover {
+    background-color: rgba(210, 105, 30, 0.797);
+}
+
+#deleteOneChar {
+    display: flex;
+    justify-content: center;
+}

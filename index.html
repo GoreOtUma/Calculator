@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Примитивный онлайн калькулятор">
+    <meta name="keywords" content="калькулятор, онлайн, примитивный, математический, простой, вычисления">
+    <meta name="author" content="Кушнарева Марина">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script async src="script.js"></script>
+</head>
+<body>
+    <main>
+        <section id="calculator">
+            <div id="calculatorHistory"></div>
+            <input type="text" id="calculatorInput">
+            <div id="calculatorBody">
+                <button class="calculatorButton" id="deleteAllChars">C</button>
+                <button class="calculatorButton mathElement">(</button>
+                <button class="calculatorButton mathElement">)</button>
+                <button class="calculatorButton mathElement mainOperation">/</button>
+                <button class="calculatorButton mathElement">9</button>
+                <button class="calculatorButton mathElement">8</button>
+                <button class="calculatorButton mathElement">7</button>
+                <button class="calculatorButton mathElement mainOperation">*</button>
+                <button class="calculatorButton mathElement">6</button>
+                <button class="calculatorButton mathElement">5</button>
+                <button class="calculatorButton mathElement">4</button>
+                <button class="calculatorButton mathElement mainOperation">+</button>
+                <button class="calculatorButton mathElement">3</button>
+                <button class="calculatorButton mathElement">2</button>
+                <button class="calculatorButton mathElement">1</button>
+                <button class="calculatorButtonmathElement mainOperation">-</button>
+                <button class="calculatorButton mathElement">.</button>
+                <button class="calculatorButton mathElement">0</button>
+                <button class="calculatorButton" id="deleteOneChar"><img src="delete-svgrepo-com.svg" width="22px" alt="Удалить"></button>
+                <button class="calculatorButton" id="getResult">=</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
